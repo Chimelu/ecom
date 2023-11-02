@@ -1,0 +1,29 @@
+.hero-img{
+    height: 40rem;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 4rem;
+    grid-column-gap: 3rem;
+}
+.card-inner{
+    height: 100px;
+    min-width: 2rem;
+  
+}
+.card:hover{
+    /* background-color: brown; */
+    border: none;
+    
+   
+  
+}
+
+.card-container-img{
+    height: 150px;
+    width: 7rem;
+    margin: auto;
+    
+    
+}
