@@ -12,7 +12,11 @@ import Help from './pages/Help';
 
 
 
+
 function App() {
+  
+
+
 const cartItemsFromLocalStorage = JSON.parse(localStorage.getItem('cart')) || []
 const [cart, setCart] = useState(cartItemsFromLocalStorage)
 useEffect(()=>{
@@ -34,7 +38,7 @@ let handleAddToCart = (product)=>{
       <NavBar cart={cart}/>
       <Routes>
        <Route index element={<Home cart={cart} handleAddToCart={handleAddToCart} setCart={setCart} />}/>
-        <Route path='/Cart' element={<Cart cart={cart}  setCart={setCart} />}/>
+        {/* <Route path='/Cart' element={<Cart cart={cart}  setCart={setCart} />}/> */}
         <Route path='/SingleProduct/:id' element={<SingleProduct cart={cart} handleAddToCart={handleAddToCart}  setCart={setCart} />}/> 
         <Route path='/help' element={<Help/>} />
       </Routes>

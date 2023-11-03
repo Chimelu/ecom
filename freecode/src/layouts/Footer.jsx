@@ -18,7 +18,8 @@ function Footer() {
         <div className="footer-section">
           <h3>Follow Us</h3>
           <p>Stay connected with us on social media.</p>
-          {/* Add social media icons or links here */}
+           {/* Add social media icons or links here */}
+        
         </div>
       </div>
       <div className="footer-bottom">
