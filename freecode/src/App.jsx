@@ -8,7 +8,7 @@ import SingleProduct from './pages/SingleProduct';
 import { useEffect, } from 'react';
 import { useState } from 'react';
 import Footer from './layouts/Footer';
-import Help from './pages/Help';
+// import Help from './pages/Help';
 
 
 
@@ -49,7 +49,7 @@ let handleAddToCart = (product) => {
        <Route index element={<Home cart={cart} handleAddToCart={handleAddToCart} setCart={setCart} />}/>
         <Route path='/Cart' element={<Cart cart={cart}  setCart={setCart} />}/>
         <Route path='/SingleProduct/:id' element={<SingleProduct cart={cart} handleAddToCart={handleAddToCart}  setCart={setCart} />}/> 
-        <Route path='/help' element={<Help/>} />
+        {/* <Route path='/help' element={<Help/>} /> */}
       </Routes>
       
 
