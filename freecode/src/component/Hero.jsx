@@ -7,7 +7,7 @@ import Card from "react-bootstrap/Card";
 import { Link } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 
-const Hero = ({card,setCart,handleAddToCart}) => {
+const Hero = ({cart,handleAddToCart,setCart}) => {
   const { data: data, loading: loading } = useFetch(
     "https://fakestoreapi.com/products/14"
   );

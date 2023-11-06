@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 
 
-const Jewelry = ({handleAddToCart}) => {
+const Jewelry = ({cart,handleAddToCart,setCart}) => {
     const { data: data3, loading: loading3 } = useFetch(
         "https://fakestoreapi.com/products/category/women's clothing"
       );
@@ -19,7 +19,12 @@ const Jewelry = ({handleAddToCart}) => {
       });
   }
   return (
-    <div className="container mt-3    card-women ">
+    <div>
+       <div className="component-title-women">
+        <h2>WOMEN CATEGORY</h2>
+      </div>
+
+    <div className="container mt-3  card-women ">
         {data3.map((datum3) => {
               const { id, title, image, price } = datum3;
               return (
@@ -41,6 +46,7 @@ const Jewelry = ({handleAddToCart}) => {
               );
             })}
         
+    </div>
     </div>
   )
 }

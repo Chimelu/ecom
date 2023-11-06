@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom';
 import useFetch from '../customHook/useFetch';
 import Card from "react-bootstrap/Card";
@@ -12,6 +12,9 @@ const SingleProduct = ({cart,handleAddToCart}) => {
     const {id} = useParams()
     const {data,loading}=useFetch(`https://fakestoreapi.com/products/${id}`)
     const {title,price,image, description}=data
+    useEffect (()=>{
+      document.title= `product | ${title}`
+    })
     const notify = () =>{
         toast("An Item has been added",{
           position:toast.POSITION.TOP_CENTER
