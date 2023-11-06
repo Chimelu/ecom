@@ -32,7 +32,7 @@ const Electronics = ({cart,handleAddToCart,setCart}) => {
                     <Card.Body>
                       <Card.Title>{title.slice(0,5)}</Card.Title>
                       <Card.Text>
-                      {`$${price}`}
+                      ${price}
                       </Card.Text>
                       <Button onClick={()=>{handleAddToCart(datumElectronics);notify()}} variant="primary">Add to cart</Button>
                       <ToastContainer/>

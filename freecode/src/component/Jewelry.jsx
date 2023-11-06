@@ -37,7 +37,7 @@ const Jewelry = ({cart,handleAddToCart,setCart}) => {
                     <Card.Body className="text-center">
                       <Card.Title>{title.slice(0,5)}</Card.Title>
                       <Card.Text>
-                        {`$${price}`}
+                        ${price}
                       </Card.Text>
                       <Button onClick={()=>{handleAddToCart(datum3);notify()}} variant="primary">Add to chart</Button>
                     </Card.Body>
