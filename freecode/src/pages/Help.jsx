@@ -10,7 +10,7 @@ const Help = () => {
       <h2>Frequently Asked Questions (FAQs)</h2>
 
       <h3>1. How do I place an order?</h3>
-      <p>To place an order, follow these steps:
+      <p>To place an order, follow these steps:</p>
         <ol>
           <li>Visit our product catalog.</li>
           <li>Click on the product you want to purchase.</li>
@@ -18,7 +18,7 @@ const Help = () => {
           <li>Go to your shopping cart, review your items, and click "Checkout."</li>
           <li>Follow the prompts to complete your order and provide shipping information.</li>
         </ol>
-      </p>
+      
 
       <h3>2. How can I track my order?</h3>
       <p>You can track your order by logging into your account and visiting the "Order Status" page. Here, you'll find the status and tracking information for your recent orders.</p>

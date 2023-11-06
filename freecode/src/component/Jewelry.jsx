@@ -9,10 +9,8 @@ import { Link } from "react-router-dom";
 
 
 const Jewelry = ({cart,handleAddToCart,setCart}) => {
-    const { data: data3, loading: loading3 } = useFetch(
-        "https://fakestoreapi.com/products/category/women's clothing"
-      );
-    console.log(data3)
+  const{data,loading}=useFetch("https://fakestoreapi.com/products/category/women's clothing")
+    console.log(data)
     const notify = () =>{
       toast("An Item has been added",{
         position:toast.POSITION.TOP_CENTER
@@ -25,7 +23,7 @@ const Jewelry = ({cart,handleAddToCart,setCart}) => {
       </div>
 
     <div className="container mt-3  card-women ">
-        {data3.map((datum3) => {
+        {data.map((datum3) => {
               const { id, title, image, price } = datum3;
               return (
                 <div key={id} className="card-innerJ text-center ">
