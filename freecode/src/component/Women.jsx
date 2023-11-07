@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 
 
-const Jewelry = ({cart,handleAddToCart,setCart}) => {
+const Jewelry = ({handleAddToCart}) => {
   const{data,loading}=useFetch("https://fakestoreapi.com/products/category/women's clothing")
     console.log(data)
     const notify = () =>{

@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import useFetch from '../customHook/useFetch';
 
-const Electronics = ({cart,handleAddToCart,setCart}) => {
+const Electronics = ({handleAddToCart}) => {
     const{data,loading}=useFetch('https://fakestoreapi.com/products/category/electronics')
     const notify = () =>{
         toast("An Item has been added",{
